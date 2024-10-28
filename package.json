@@ -1,0 +1,57 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build --dotenv .env.production",
+    "dev": "npx nuxi dev --dotenv .env.development",
+    "start": "npx nuxi start --dotenv .env.production",
+    "local": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ./_app --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
+    "@pinia/nuxt": "^0.5.1",
+    "@tanstack/vue-table": "^8.20.5",
+    "@vite-pwa/nuxt": "^0.10.5",
+    "@vueuse/core": "^11.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "embla-carousel-vue": "^8.3.0",
+    "lucide-vue-next": "^0.447.0",
+    "nuxt": "^3.12.3",
+    "pinia": "^2.1.7",
+    "radix-vue": "^1.9.6",
+    "tailwind-merge": "^2.5.3",
+    "tailwindcss-animate": "^1.0.7",
+    "vaul-vue": "^0.2.0",
+    "vue": "latest",
+    "vue-sonner": "^1.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@types/lodash": "^4.17.6",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.6.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
+    "husky": "^9.0.11",
+    "postcss": "^8.4.39",
+    "shadcn-nuxt": "^0.10.4",
+    "tailwindcss": "^3.4.4",
+    "typescript-eslint": "^7.15.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm run lint"
+    }
+  }
+}
