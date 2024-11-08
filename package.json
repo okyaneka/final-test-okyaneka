@@ -14,6 +14,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.6.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
     "@pinia/nuxt": "^0.5.1",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.6.0",
+    "@iconify-json/ri": "^1.2.3",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@types/lodash": "^4.17.6",
     "@typescript-eslint/eslint-plugin": "^8.8.1",
@@ -53,5 +55,6 @@
     "hooks": {
       "pre-commit": "pnpm run lint"
     }
-  }
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }
