@@ -1,10 +1,15 @@
 <script setup lang="ts">
+import { useTitle } from "@vueuse/core";
 import {
+  FeatureCard1,
   Header,
   HomeDatePicker,
+  HomeFeat1,
   HomeSelect,
 } from "~/_app/components/molecules";
 import { Button } from "~/_app/components/ui/button";
+
+useTitle("Welcome - Mandalika Blissful");
 </script>
 
 <template>
@@ -29,4 +34,6 @@ import { Button } from "~/_app/components/ui/button";
 
   <!-- spacer -->
   <div class="mt-16"></div>
+
+  <HomeFeat1 />
 </template>
